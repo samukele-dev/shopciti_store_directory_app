@@ -9,10 +9,10 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>rate - &amp; page</title>
+    <title>ShopCiti - Directory | Rate Store</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="img/core-img/">
 
     <!-- Core Stylesheet -->
     <link href="style.css" rel="stylesheet">
@@ -110,46 +110,43 @@
 
         <!-- ***** Contact Area Start ***** -->
         <div class="dorne-contact-area d-md-flex" id="contact">
-
-
             <!-- Contact Form Area -->
             <div class="contact-form-area equal-height">
-
                 <div class="contact-form">
                     <div class="contact-form-title">
                         <h6>Rate a Store</h6>
                     </div>
-                    <form action="#">
+                    <form id="ratingForm" action="https://formspree.io/f/xjvqdwry" method="POST">
                         <div class="row">
                             <div class="col-12 col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="Your Name">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="email" name="email" class="form-control" placeholder="Email Address">
+                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
                             </div>
                             <div class="col-12">
                                 <!-- Add a dropdown for store selection -->
-                                <select name="store" class="form-control">
-                                <option value="" disabled selected>Select a Store</option>
-                                <option value="store1">Store 1</option>
-                                <option value="store2">Store 2</option>
-                                <!-- Add more stores as needed -->
-                            </select>
+                                <select name="store" class="form-control" required>
+                            <option value="" disabled selected>Select a Store</option>
+                            <option value="store1">Store 1</option>
+                            <option value="store2">Store 2</option>
+                            <!-- Add more stores as needed -->
+                        </select>
                             </div>
                             <div class="col-12">
                                 <!-- Add a dropdown for rating -->
-                                <select name="rating" class="form-control">
-                                <option value="" disabled selected>Rate the Store (0-5 stars)</option>
-                                <option value="0">0 stars</option>
-                                <option value="1">1 star</option>
-                                <option value="2">2 stars</option>
-                                <option value="3">3 stars</option>
-                                <option value="4">4 stars</option>
-                                <option value="5">5 stars</option>
-                            </select>
+                                <select name="rating" class="form-control" required>
+                            <option value="" disabled selected>Rate the Store (0-5 stars)</option>
+                            <option value="0">0 stars</option>
+                            <option value="1">1 star</option>
+                            <option value="2">2 stars</option>
+                            <option value="3">3 stars</option>
+                            <option value="4">4 stars</option>
+                            <option value="5">5 stars</option>
+                        </select>
                             </div>
                             <div class="col-12">
-                                <textarea name="message" class="form-control" id="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                <textarea name="message" class="form-control" id="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                             </div>
                             <div class="col-12">
                                 <button type="submit" class="btn dorne-btn">Rate</button>
@@ -159,6 +156,10 @@
                 </div>
             </div>
         </div>
+
+
+
+
     </section>
 
 
@@ -202,6 +203,20 @@
     <script src="js/google-map/map-active.js"></script>
     <!-- Active JS -->
     <script src="js/active.js"></script>
+
+    <script>
+        function submitForm() {
+            var form = document.getElementById('ratingForm');
+            if (form.checkValidity()) {
+                // Form is valid, you can submit the data or perform further actions
+                alert('Form submitted successfully!');
+                form.reset(); // Optional: Reset the form after submission
+            } else {
+                // Form is not valid, you can provide user feedback or handle errors
+                alert('Please fill in all required fields.');
+            }
+        }
+    </script>
 </body>
 
 </html>
