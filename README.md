@@ -1,5 +1,7 @@
-# shopciti_store_directory_app
+# shopciti store directory app
 
-This is a directory website for all local clothing brands - The aim of this website is to list all safe and secure local website that sells local clothing brands
+- This is a directory website for all local clothing brands - The aim of this website is to list all safe and secure local website that sells local clothing brands
 
-# The directory also has review/rate section where local stores are rated
+- The directory also has review/rate section where local stores are rated
+
+- www.shopciti.co.za
