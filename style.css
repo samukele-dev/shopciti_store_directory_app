@@ -124,8 +124,9 @@ p {
 }
 
 .section-padding-0-100 {
-    padding-top: 0;
-    padding-bottom: 10px;
+    padding-top: 35px;
+    padding-bottom: 38px;
+    margin-top: 15px;
 }
 
 img {
@@ -260,7 +261,7 @@ li {
 .section-heading {
     position: relative;
     z-index: 1;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
 }
 
 .section-heading span {
@@ -747,9 +748,13 @@ li {
 
 .dorne-features-destinations-area,
 .dorne-features-restaurant-area {
-    padding: 100px 35px;
+    padding: 30px 35px;
+    padding-bottom: 50px !important;
     position: relative;
     z-index: 1;
+    background-color: #f3f3f3;
+    margin: 85px;
+    border-radius: 10px;
 }
 
 .single-features-area {

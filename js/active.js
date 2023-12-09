@@ -1,10 +1,10 @@
-(function ($) {
+(function($) {
     'use strict';
 
     if ($.fn.owlCarousel) {
         // Hero Slider Active Code
         $(".features-slides").owlCarousel({
-            items: 5,
+            items: 4,
             loop: true,
             autoplay: false,
             smartSpeed: 2000,
@@ -21,22 +21,22 @@
                     items: 3
                 },
                 1200: {
-                    items: 5
+                    items: 4
                 }
             }
         })
     }
 
     // Search Active Code
-    $('#search-btn, #closeBtn').on('click', function () {
+    $('#search-btn, #closeBtn').on('click', function() {
         $('body').toggleClass('search-form-on');
     });
-    
+
     // matchHeight Active Code
     if ($.fn.matchHeight) {
         $('.equal-height').matchHeight();
     }
-    
+
     // ScrollUp Active Code
     if ($.fn.scrollUp) {
         $.scrollUp({
@@ -55,7 +55,7 @@
     }
 
     // PreventDefault a Click
-    $("a[href='#']").on('click', function ($) {
+    $("a[href='#']").on('click', function($) {
         $.preventDefault();
     });
 
@@ -67,7 +67,7 @@
     var $window = $(window);
 
     // Sticky Active JS
-    $window.on('scroll', function () {
+    $window.on('scroll', function() {
         if ($window.scrollTop() > 0) {
             $('body').addClass('sticky');
         } else {
@@ -76,8 +76,8 @@
     });
 
     // Preloader Active Code
-    $window.on('load', function () {
-        $('#preloader').fadeOut('slow', function () {
+    $window.on('load', function() {
+        $('#preloader').fadeOut('slow', function() {
             $(this).remove();
         });
     });
