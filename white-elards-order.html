@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Order your favorite hoodies online.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>ShopCiti - Hoodie Order</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive/responsive.css" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .order-form {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        width: 100%;
+    }
+    
+    .product-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .product-description {
+        color: #666;
+    }
+</style>
+
+<body>
+
+
+    <section class="dorne-listing-destinations-area section-padding-100-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading dark text-center">
+                        <span></span>
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <a href="index.html">Back to Home</a>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <form class="order-form row" action="/submit-order" method="post">
+                            <div class="col-md-6">
+                                <img src="img/bg-img/White-Elards.jpg" alt="Product Image" class="product-image img-fluid rounded">
+
+                                <div class="product-description mt-3">
+                                    <p>Stay warm and stylish with our high-quality hoodies. Perfect for any season, our hoodies are made from a soft, durable cotton blend that ensures comfort and longevity. Available in multiple sizes.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2 class="text-center">Order Your Hoodie</h2>
+
+                                <div class="form-group">
+                                    <label for="size">Size</label>
+                                    <select id="size" name="size" class="form-control" required>
+                                <option value="">Select a size</option>
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="quantity">Quantity</label>
+                                    <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="100" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <textarea id="address" name="address" class="form-control" rows="2" required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-success btn-block">Place Order</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

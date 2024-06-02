@@ -51,7 +51,7 @@
             <div class="row h-100">
                 <div class="col-12 h-100">
                     <nav class="h-100 navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html"><img src="img/core-img/shopciti.png" alt=""></a>
+                        <a class="navbar-brand" href="index.html"><img src="img/core-img/bg.png" alt="" style="max-height: 85px;"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav" aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
                         <!-- Nav -->
                         <div class="collapse navbar-collapse" id="dorneNav">
@@ -69,7 +69,10 @@
                                     <a class="nav-link " href="about.html">About us </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="rate.html">Rate Store</a>
+                                    <a class="nav-link" href="rate.html">Rate a Store</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="listing.html">List your Store</a>
                                 </li>
                             </ul>
                             <!-- Search btn -->
@@ -107,184 +110,47 @@
                 <div class="col-12">
                     <div class="section-heading dark text-center">
                         <span></span>
-                        <h4>Featured destinations</h4>
-                        <p>Editor’s pick</p>
+                        <h4>List your store</h4>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <!-- Single Features Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-features-area mb-50">
-                        <img src="img/bg-img/feature-1.jpg" alt="">
-                        <!-- Price -->
-                        <div class="price-start">
-                            <p>FROM $59/night</p>
+
+            <div class="contact-form">
+
+                <form id="applicationForm" action="https://formspree.io/f/xjvqdwry" method="POST">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                         </div>
-                        <div class="feature-content d-flex align-items-center justify-content-between">
-                            <div class="feature-title">
-                                <h5>Ibiza</h5>
-                                <p>Party</p>
-                            </div>
-                            <div class="feature-favourite">
-                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                            </div>
+                        <div class="col-12 col-md-6">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
                         </div>
-                    </div>
-                </div>
-                <!-- Single Features Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-features-area mb-50">
-                        <img src="img/bg-img/feature-2.jpg" alt="">
-                        <!-- Price -->
-                        <div class="price-start">
-                            <p>FROM $59/night</p>
+                        <div class="col-12">
+                            <input type="text" name="store_name" class="form-control" placeholder="Store Name" required>
                         </div>
-                        <div class="feature-content d-flex align-items-center justify-content-between">
-                            <div class="feature-title">
-                                <h5>Paris</h5>
-                                <p>Luxury</p>
-                            </div>
-                            <div class="feature-favourite">
-                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                            </div>
+                        <div class="col-12 col-md-6">
+                            <input type="text" name="address" class="form-control" placeholder="Store Address" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="text" name="city" class="form-control" placeholder="City" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="text" name="state" class="form-control" placeholder="State" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="text" name="zip" class="form-control" placeholder="ZIP Code" required>
+                        </div>
+                        <div class="col-12">
+                            <textarea name="message" class="form-control" id="Message" cols="30" rows="10" placeholder="Describe Your Store and Products" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn dorne-btn">Submit</button>
                         </div>
                     </div>
-                </div>
-                <!-- Single Features Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-features-area mb-50">
-                        <img src="img/bg-img/feature-3.jpg" alt="">
-                        <!-- Price -->
-                        <div class="price-start">
-                            <p>FROM $59/night</p>
-                        </div>
-                        <div class="feature-content d-flex align-items-center justify-content-between">
-                            <div class="feature-title">
-                                <h5>Lake Como</h5>
-                                <p>Spectacular</p>
-                            </div>
-                            <div class="feature-favourite">
-                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Features Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-features-area mb-50">
-                        <img src="img/bg-img/feature-4.jpg" alt="">
-                        <!-- Price -->
-                        <div class="price-start">
-                            <p>FROM $59/night</p>
-                        </div>
-                        <div class="feature-content d-flex align-items-center justify-content-between">
-                            <div class="feature-title">
-                                <h5>Greece</h5>
-                                <p>Sunny</p>
-                            </div>
-                            <div class="feature-favourite">
-                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Features Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-features-area mb-50">
-                        <img src="img/bg-img/feature-5.jpg" alt="">
-                        <!-- Price -->
-                        <div class="price-start">
-                            <p>FROM $59/night</p>
-                        </div>
-                        <div class="feature-content d-flex align-items-center justify-content-between">
-                            <div class="feature-title">
-                                <h5>Norway</h5>
-                                <p>All Year round</p>
-                            </div>
-                            <div class="feature-favourite">
-                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Features Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-features-area mb-50">
-                        <img src="img/bg-img/feature-1.jpg" alt="">
-                        <!-- Price -->
-                        <div class="price-start">
-                            <p>FROM $59/night</p>
-                        </div>
-                        <div class="feature-content d-flex align-items-center justify-content-between">
-                            <div class="feature-title">
-                                <h5>Ibiza</h5>
-                                <p>Party</p>
-                            </div>
-                            <div class="feature-favourite">
-                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Features Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-features-area mb-50">
-                        <img src="img/bg-img/feature-2.jpg" alt="">
-                        <!-- Price -->
-                        <div class="price-start">
-                            <p>FROM $59/night</p>
-                        </div>
-                        <div class="feature-content d-flex align-items-center justify-content-between">
-                            <div class="feature-title">
-                                <h5>Paris</h5>
-                                <p>Luxury</p>
-                            </div>
-                            <div class="feature-favourite">
-                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Features Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-features-area mb-50">
-                        <img src="img/bg-img/feature-3.jpg" alt="">
-                        <!-- Price -->
-                        <div class="price-start">
-                            <p>FROM $59/night</p>
-                        </div>
-                        <div class="feature-content d-flex align-items-center justify-content-between">
-                            <div class="feature-title">
-                                <h5>Lake Como</h5>
-                                <p>Spectacular</p>
-                            </div>
-                            <div class="feature-favourite">
-                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Features Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-features-area mb-50">
-                        <img src="img/bg-img/feature-4.jpg" alt="">
-                        <!-- Price -->
-                        <div class="price-start">
-                            <p>FROM $59/night</p>
-                        </div>
-                        <div class="feature-content d-flex align-items-center justify-content-between">
-                            <div class="feature-title">
-                                <h5>Greece</h5>
-                                <p>Sunny</p>
-                            </div>
-                            <div class="feature-favourite">
-                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </form>
+
             </div>
+            <!-- ***** Contact Area End ***** -->
         </div>
     </section>
     <!-- ***** Listing Destinations Area End ***** -->
@@ -324,6 +190,20 @@
     <script src="js/others/plugins.js"></script>
     <!-- Active JS -->
     <script src="js/active.js"></script>
+
+    <script>
+        function submitForm() {
+            var form = document.getElementById('ratingForm');
+            if (form.checkValidity()) {
+                // Form is valid, you can submit the data or perform further actions
+                alert('Form submitted successfully!');
+                form.reset(); // Optional: Reset the form after submission
+            } else {
+                // Form is not valid, you can provide user feedback or handle errors
+                alert('Please fill in all required fields.');
+            }
+        }
+    </script>
 </body>
 
 </html>

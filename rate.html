@@ -51,7 +51,7 @@
             <div class="row h-100">
                 <div class="col-12 h-100">
                     <nav class="h-100 navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html"><img src="img/core-img/shopciti.png" alt=""></a>
+                        <a class="navbar-brand" href="index.html"><img src="img/core-img/bg.png" alt="" style="max-height: 85px;"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav" aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
                         <!-- Nav -->
                         <div class="collapse navbar-collapse" id="dorneNav">
@@ -70,6 +70,9 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="rate.html">Rate Store</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="listing.html">List your Store</a>
                                 </li>
                             </ul>
                             <!-- Search btn -->
@@ -102,40 +105,44 @@
     <!-- ***** Breadcumb Area End ***** -->
 
     <section>
-        <div class="contact-text">
-            <h4>Hello, Please help us improve local brands</h4>
-            <p>Rating local stores is a powerful way to shape and elevate brands within our community. Your feedback provides valuable insights, helping businesses understand their strengths and areas for improvement. By taking a moment to rate your experiences,
-                you contribute to a culture of continuous growth and excellence. Together, we can foster a thriving environment for businesses to evolve, ensuring that our community enjoys the best and most trusted shopping experiences.</p>
-        </div>
+        <div class="container pt-5 ">
+            <div class="contact-text">
+                <h4 style="text-align: center;">Hello, Please help us improve local brands</h4>
+                <div class="container">
+                    <p>Rating local stores is a powerful way to shape and elevate brands within our community. Your feedback provides valuable insights, helping businesses understand their strengths and areas for improvement. By taking a moment to rate your
+                        experiences, you contribute to a culture of continuous growth and excellence. Together, we can foster a thriving environment for businesses to evolve, ensuring that our community enjoys the best and most trusted shopping experiences.</p>
+                </div>
+            </div>
 
-        <!-- ***** Contact Area Start ***** -->
-        <div class="dorne-contact-area d-md-flex" id="contact">
-            <!-- Contact Form Area -->
-            <div class="contact-form-area equal-height">
-                <div class="contact-form">
-                    <div class="contact-form-title">
-                        <h6>Rate a Store</h6>
-                    </div>
-                    <form id="ratingForm" action="https://formspree.io/f/xjvqdwry" method="POST">
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            <!-- ***** Contact Area Start ***** -->
+            <div class="dorne-contact-area d-md-flex" id="contact">
+                <div class="container">
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-area equal-height">
+                        <div class="contact-form">
+                            <div class="contact-form-title">
+                                <h6>Rate a Store</h6>
                             </div>
-                            <div class="col-12 col-md-6">
-                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                            </div>
-                            <div class="col-12">
-                                <!-- Add a dropdown for store selection -->
-                                <select name="store" class="form-control" required>
+                            <form id="ratingForm" action="https://formspree.io/f/xjvqdwry" method="POST">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <!-- Add a dropdown for store selection -->
+                                        <select name="store" class="form-control" required>
                             <option value="" disabled selected>Select a Store</option>
                             <option value="store1">Store 1</option>
                             <option value="store2">Store 2</option>
                             <!-- Add more stores as needed -->
                         </select>
-                            </div>
-                            <div class="col-12">
-                                <!-- Add a dropdown for rating -->
-                                <select name="rating" class="form-control" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <!-- Add a dropdown for rating -->
+                                        <select name="rating" class="form-control" required>
                             <option value="" disabled selected>Rate the Store (0-5 stars)</option>
                             <option value="0">0 stars</option>
                             <option value="1">1 star</option>
@@ -144,22 +151,19 @@
                             <option value="4">4 stars</option>
                             <option value="5">5 stars</option>
                         </select>
-                            </div>
-                            <div class="col-12">
-                                <textarea name="message" class="form-control" id="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn dorne-btn">Rate</button>
-                            </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="message" class="form-control" id="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn dorne-btn">Rate</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-
-
     </section>
 
 
